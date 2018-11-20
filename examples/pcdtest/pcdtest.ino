@@ -21,12 +21,12 @@ All text above, and the splash screen must be included in any redistribution
 #include <Adafruit_PCD8544.h>
 
 // Software SPI (slower updates, more flexible pin options):
-// pin 7 - Serial clock out (SCLK)
-// pin 6 - Serial data out (DIN)
+// pin 3 - Serial clock out (SCLK)
+// pin 4 - Serial data out (DIN)
 // pin 5 - Data/Command select (D/C)
-// pin 4 - LCD chip select (CS)
-// pin 3 - LCD reset (RST)
-Adafruit_PCD8544 display = Adafruit_PCD8544(7, 6, 5, 4, 3);
+// pin 6 - LCD chip select (CS)
+// pin 7 - LCD reset (RST)
+Adafruit_PCD8544 display = Adafruit_PCD8544(3, 4, 5, 6, 7);
 
 // Hardware SPI (faster, but must use certain hardware pins):
 // SCK is LCD serial clock (SCLK) - this is pin 13 on Arduino Uno
